@@ -1,0 +1,104 @@
+header {
+  font-style: italic;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid black;
+  position: fixed;
+  top: 0px;
+  z-index: 2;
+  width: 100%;
+}
+.menubar {
+  position: relative;
+  right: 30px;
+}
+#menubartext li {
+  display: inline-block;
+  width: 150px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+}
+header a {
+  color: white;
+  text-decoration: none;
+}
+a.pageanchor {
+  display: block;
+  height: 270px;
+  visibility: hidden;
+}
+.pageBackGround {
+  height: auto;
+  width: 100%;
+  background-color: #EEEEEE;
+  border: 1px solid #EEEEEE;
+}
+.container {
+  display: flex;
+  width: 800px;
+  margin: 20px auto;
+}
+.photoContainer {
+  display: block;
+  height: auto;
+  width: 200px;
+  background: #EEEEEE;
+  text-align: center;
+  margin: auto 0;
+}
+.photoContainer h2 {
+  margin-top: 0;
+}
+.photoContainer img{
+  width: 100px;
+  height: auto;
+}
+.textContainer {
+  width: 600px;
+  margin: auto 0;
+}
+.textContainer p {
+  line-height: 1.6
+}
+li {
+  line-height: 2
+}
+footer {
+  position: relative;
+  height: 250px;
+}
+@media screen and (max-width: 992px) {
+  .container {
+    display: block;
+    width: auto;
+    margin: 10px 10%;
+  }
+  .photoContainer {
+    margin: 0 auto;
+  }
+  .photoContainer h2 {
+    text-align: center;
+  }
+  .textContainer {
+    width: auto;
+  }
+}
+@media screen and (max-width: 836px) {
+  a.pageanchor {
+    height: 310px;
+  }
+}
+@media screen and (max-width: 643px) {
+  a.pageanchor {
+    height: 380px;
+  }
+}
+@media screen and (max-width: 521px) {
+  a.pageanchor {
+    height: 420px;
+  }
+}
