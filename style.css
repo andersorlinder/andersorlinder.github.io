@@ -54,7 +54,7 @@ a.pageanchor {
   margin-top: 0;
 }
 .photoContainer img{
-  width: 100px;
+  width: 140px;
   height: auto;
 }
 .textContainer {
@@ -75,7 +75,7 @@ footer {
   .container {
     display: block;
     width: auto;
-    margin: 10px 10%;
+    margin: 30px 10%;
   }
   .photoContainer {
     margin: 0 auto;
