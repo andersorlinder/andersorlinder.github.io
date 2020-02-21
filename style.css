@@ -1,6 +1,10 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  margin: 0;
+  padding: 0;
+}
 header {
   text-align: center;
   color: white;
@@ -41,9 +45,9 @@ header a {
 header a:hover {
   color: #EEEEEE;
 }
-a.pageAnchorFirst, a.pageAnchorMiddle, a.pageAnchorFooter {
+a.pageAnchor {
   display: block;
-  height: 270px;
+  height: 250px;
   visibility: hidden;
 }
 .pageBackGround {
@@ -81,9 +85,6 @@ a.pageAnchorFirst, a.pageAnchorMiddle, a.pageAnchorFooter {
 }
 li {
   line-height: 2
-}
-.spaceToFooter {
-  height: 250px;
 }
 footer {
   background-color: #EEEEEE;
@@ -129,8 +130,11 @@ footer {
 }
 
 @media screen and (max-width: 992px) and (orientation: portrait) {
-  a.pageAnchorMiddle, a.pageAnchorFooter {
-    height: 700px;
+  a.pageAnchor {
+    height: 310px;
+  }
+  .extraHeight {
+    height: 400px;
   }
 }
 
