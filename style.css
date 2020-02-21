@@ -1,6 +1,4 @@
 header {
-  font-style: italic;
-  font-size: 30px;
   text-align: center;
   color: white;
   background-color: rgba(0, 0, 0, 0.7);
@@ -9,6 +7,10 @@ header {
   top: 0px;
   z-index: 2;
   width: 100%;
+  font-size: 30px;
+}
+header h1 {
+  font-style: italic;
 }
 .menubar {
   position: relative;
@@ -67,36 +69,65 @@ a.pageanchor {
 li {
   line-height: 2
 }
-footer {
-  position: relative;
+.spaceToFooter {
   height: 250px;
 }
+footer {
+  background-color: #EEEEEE;
+}
+.footerLinks {
+  display: flex;
+  width: 830px;
+  margin: 0px auto;
+  padding: 10px 0;
+}
+.footerLink {
+  width: 270px;
+  text-align: center;
+}
+.footerLink a {
+  text-decoration: none;
+  line-height: 2
+}
+
 @media screen and (max-width: 992px) {
+  .pageBackGround {
+    min-height: 1200px;
+
+  }
   .container {
     display: block;
-    width: auto;
-    margin: 30px 10%;
+    width: 500px;
+    margin: 30px auto;
   }
   .photoContainer {
     margin: 0 auto;
   }
-  .photoContainer h2 {
+  .photoContainer h1 {
+    font-size: 30px;
     text-align: center;
   }
   .textContainer {
     width: auto;
   }
+  .footerLinks {
+    display: block;
+    width: 272px;
+  }
 }
+
 @media screen and (max-width: 836px) {
   a.pageanchor {
     height: 310px;
   }
 }
+
 @media screen and (max-width: 643px) {
   a.pageanchor {
     height: 380px;
   }
 }
+
 @media screen and (max-width: 521px) {
   a.pageanchor {
     height: 420px;
