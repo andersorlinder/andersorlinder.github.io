@@ -16,6 +16,7 @@ header {
   text-align: right;
   margin-right: 20px;
   font-size: 15px;
+  line-height: 2
 }
 header h1 {
   font-size: 60px;
@@ -40,7 +41,7 @@ header a {
 header a:hover {
   color: #EEEEEE;
 }
-a.pageanchor {
+a.pageAnchorFirst, a.pageAnchorMiddle, a.pageAnchorFooter {
   display: block;
   height: 270px;
   visibility: hidden;
@@ -128,8 +129,8 @@ footer {
 }
 
 @media screen and (max-width: 992px) and (orientation: portrait) {
-  .pageBackGround {
-    min-height: 1200px;
+  a.pageAnchorMiddle, a.pageAnchorFooter {
+    height: 400px;
   }
 }
 
