@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 header {
   text-align: center;
   color: white;
@@ -7,9 +10,15 @@ header {
   top: 0px;
   z-index: 2;
   width: 100%;
-  font-size: 30px;
+}
+#contactLink {
+  float: right;
+  text-align: right;
+  margin-right: 20px;
+  font-size: 15px;
 }
 header h1 {
+  font-size: 60px;
   font-style: italic;
 }
 .menubar {
@@ -27,6 +36,9 @@ header h1 {
 header a {
   color: white;
   text-decoration: none;
+}
+header a:hover {
+  color: #EEEEEE;
 }
 a.pageanchor {
   display: block;
@@ -89,14 +101,13 @@ footer {
   text-decoration: none;
   line-height: 2
 }
+.footerLink a {
+  color: #0000EE;
+}
 
 @media screen and (max-width: 992px) {
-  .pageBackGround {
-    min-height: 1200px;
-
-  }
   .container {
-    display: block;
+    flex-direction: column;
     width: 500px;
     margin: 30px auto;
   }
@@ -113,6 +124,12 @@ footer {
   .footerLinks {
     display: block;
     width: 272px;
+  }
+}
+
+@media screen and (max-width: 992px) and (orientation: portrait) {
+  .pageBackGround {
+    min-height: 1200px;
   }
 }
 
