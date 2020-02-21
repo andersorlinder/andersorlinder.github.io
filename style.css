@@ -19,12 +19,13 @@ header {
   float: right;
   text-align: right;
   margin-right: 20px;
-  font-size: 15px;
+  font-size: 1em;
   line-height: 2
 }
 header h1 {
-  font-size: 60px;
+  font-size: 5em;
   font-style: italic;
+  margin-bottom: 0.3em;
 }
 .menubar {
   position: relative;
@@ -71,6 +72,7 @@ a.pageAnchor {
 }
 .photoContainer h1 {
   margin-top: 0;
+  font-size: 2em;
 }
 .photoContainer img{
   width: 140px;
@@ -102,15 +104,13 @@ footer {
 .footerLink a {
   text-decoration: none;
   line-height: 2
-}
-.footerLink a {
   color: #0000EE;
 }
 
 @media screen and (max-width: 992px) {
   .container {
     flex-direction: column;
-    width: 500px;
+    width: 800px;
     margin: 30px auto;
   }
   .photoContainer {
@@ -125,16 +125,40 @@ footer {
   }
   .footerLinks {
     display: block;
-    width: 272px;
+    width: 270px;
   }
 }
 
 @media screen and (max-width: 992px) and (orientation: portrait) {
+  #contactLink {
+    font-size: 1.4em;
+  }
   a.pageAnchor {
     height: 310px;
   }
   .extraHeight {
-    height: 400px;
+    height: 500px;
+  }
+  .photoContainer {
+    width: auto;
+  }
+  .photoContainer h1 {
+    font-size: 3em;
+    width: 100%;
+  }
+  .textContainer p {
+    font-size: 1em;
+  }
+  .footerLinks {
+    width: auto;
+  }
+  .footerLink {
+    width: auto;
+  }
+  .footerLink a {
+    font-size: 2em;
+    line-height: 2em;
+
   }
 }
 
