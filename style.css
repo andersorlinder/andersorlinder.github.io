@@ -19,8 +19,8 @@ header {
   float: right;
   text-align: right;
   margin-right: 20px;
-  font-size: 1em;
-  line-height: 2
+  font-size: 1.4em;
+  line-height: 2;
 }
 header h1 {
   font-size: 5em;
@@ -35,7 +35,7 @@ header h1 {
   display: inline-block;
   width: 150px;
   height: 40px;
-  font-size: 20px;
+  font-size: 1.5em;
   font-weight: bold;
   font-style: normal;
 }
@@ -46,136 +46,120 @@ header a {
 header a:hover {
   color: #EEEEEE;
 }
-a.pageAnchor {
-  display: block;
-  height: 250px;
-  visibility: hidden;
-}
 .pageBackGround {
   height: auto;
   width: 100%;
   background-color: #EEEEEE;
-  border: 1px solid #EEEEEE;
+  border: 0px solid #EEEEEE;
+}
+a.pageAnchor {
+  height: 310px;
+  display: block;
+  visibility: hidden;
+}
+.extraHeight {
+  height: 800px;
 }
 .container {
-  display: flex;
-  width: 830px;
-  margin: 20px auto;
+  display: block;
+  margin: 30px auto;
 }
 .photoContainer {
   display: block;
+  width: auto;
   height: auto;
-  width: 230px;
+  margin: 0 auto;
   background: #EEEEEE;
   text-align: center;
-  margin: auto 0;
 }
 .photoContainer h1 {
-  margin-top: 0;
+  text-align: center;
   font-size: 2em;
+  width: auto;
+  margin-top: 0;
 }
 .photoContainer img{
   width: 140px;
   height: auto;
 }
 .textContainer {
-  width: 600px;
-  margin: auto 0;
+  width: auto;
+  margin: auto 40px;;
 }
 .textContainer p {
-  line-height: 1.6
+  font-size: 0.9em;
+  line-height: 1.4;
 }
-li {
-  line-height: 2
+.textContainer ul li {
+  font-size: 0.9em;
+  line-height: 2;
 }
 footer {
   background-color: #EEEEEE;
 }
 .footerLinks {
-  display: flex;
-  width: 830px;
+  display: block;
+  width: 450px;
   margin: 0px auto;
   padding: 10px 0;
 }
 .footerLink {
-  width: 270px;
+  width: auto;
   text-align: center;
 }
 .footerLink a {
+  font-size: 1.2em;
+  line-height: 2em;
   text-decoration: none;
-  line-height: 2
   color: #0000EE;
 }
 
-@media screen and (max-width: 992px) {
-  .container {
-    flex-direction: column;
-    width: 800px;
-    margin: 30px auto;
-  }
-  .photoContainer {
-    margin: 0 auto;
-  }
-  .photoContainer h1 {
-    font-size: 30px;
-    text-align: center;
-  }
-  .textContainer {
-    width: auto;
-  }
-  .footerLinks {
-    display: block;
-    width: 270px;
-  }
-}
-
-@media screen and (max-width: 992px) and (orientation: portrait) {
-  #contactLink {
-    font-size: 1.4em;
-  }
-  a.pageAnchor {
-    height: 310px;
-  }
-  .extraHeight {
-    height: 500px;
-  }
-  .photoContainer {
-    width: auto;
-  }
-  .photoContainer h1 {
-    font-size: 3em;
-    width: 100%;
-  }
-  .textContainer p {
-    font-size: 1em;
-  }
-  .footerLinks {
-    width: auto;
-  }
-  .footerLink {
-    width: auto;
-  }
-  .footerLink a {
-    font-size: 2em;
-    line-height: 2em;
-
-  }
-}
-
-@media screen and (max-width: 836px) {
+@media (max-width: 836px) {
   a.pageanchor {
     height: 310px;
   }
 }
 
-@media screen and (max-width: 643px) {
+@media (max-width: 643px) {
   a.pageanchor {
     height: 380px;
   }
+  .footerLink a {
+    font-size: 4em;
+  }
 }
 
-@media screen and (max-width: 521px) {
+@media (max-width: 521px) {
   a.pageanchor {
     height: 420px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 992px) {
+  a.pageAnchor {
+    height: 250px;
+  }
+  .container {
+    display: flex;
+    width: 830px;
+    margin: 20px auto;
+  }
+  .photoContainer {
+    width: 230px;
+    margin: auto 0;
+  }
+  .textContainer {
+    margin-left: 30px;
+  }
+  .footerLinks {
+    display: flex;
+    width: 820px;
+  }
+  .footerLink {
+    width: 270px;
+  }
+  .footerLink a {
+    font-size: 1em;
+    line-height: 2em;
   }
 }
