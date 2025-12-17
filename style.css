@@ -96,6 +96,8 @@ a.pageAnchor {
 }
 footer {
   background-color: #EEEEEE;
+  position: absolute;
+  bottom: 0;
 }
 .footerLinks {
   display: block;
