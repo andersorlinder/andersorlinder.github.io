@@ -1,10 +1,12 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   margin: 0;
   padding: 0;
 }
+
 header {
   text-align: center;
   color: white;
@@ -15,6 +17,7 @@ header {
   z-index: 2;
   width: 100%;
 }
+
 #contactLink {
   float: right;
   text-align: right;
@@ -22,15 +25,18 @@ header {
   font-size: 1.4em;
   line-height: 2;
 }
+
 header h1 {
   font-size: 5em;
   font-style: italic;
   margin-bottom: 0.3em;
 }
+
 .menubar {
   position: relative;
   right: 30px;
 }
+
 #menubartext li {
   display: inline-block;
   width: 150px;
@@ -39,31 +45,38 @@ header h1 {
   font-weight: bold;
   font-style: normal;
 }
+
 header a {
   color: white;
   text-decoration: none;
 }
+
 header a:hover {
   color: #EEEEEE;
 }
+
 .pageBackGround {
   height: auto;
   width: 100%;
   background-color: #EEEEEE;
   border: 0px solid #EEEEEE;
 }
+
 a.pageAnchor {
   height: 310px;
   display: block;
   visibility: hidden;
 }
+
 .extraHeight {
   height: 800px;
 }
+
 .container {
-  display: block;
+  display: relative;
   margin: 30px auto;
 }
+
 .photoContainer {
   display: block;
   width: auto;
@@ -72,41 +85,54 @@ a.pageAnchor {
   background: #EEEEEE;
   text-align: center;
 }
+
 .photoContainer h1 {
   text-align: center;
   font-size: 2em;
   width: auto;
   margin-top: 0;
 }
-.photoContainer img{
+
+.photoContainer img {
   width: 140px;
   height: auto;
 }
+
 .textContainer {
   width: auto;
-  margin: auto 40px;;
+  margin: auto 40px;
+  ;
 }
+
 .textContainer p {
   font-size: 0.9em;
   line-height: 1.4;
 }
+
 .textContainer ul li {
   font-size: 0.9em;
   line-height: 2;
 }
+
 footer {
   background-color: #EEEEEE;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
+
 .footerLinks {
   display: block;
   width: 450px;
   margin: 0px auto;
   padding: 10px 0;
 }
+
 .footerLink {
   width: auto;
   text-align: center;
 }
+
 .footerLink a {
   font-size: 1.2em;
   line-height: 2em;
@@ -124,6 +150,7 @@ footer {
   a.pageanchor {
     height: 380px;
   }
+
   .footerLink a {
     font-size: 4em;
   }
@@ -139,25 +166,31 @@ footer {
   a.pageAnchor {
     height: 250px;
   }
+
   .container {
     display: flex;
     width: 830px;
     margin: 20px auto;
   }
+
   .photoContainer {
     width: 230px;
     margin: auto 0;
   }
+
   .textContainer {
     margin-left: 30px;
   }
+
   .footerLinks {
     display: flex;
     width: 820px;
   }
+
   .footerLink {
     width: 270px;
   }
+
   .footerLink a {
     font-size: 1em;
     line-height: 2em;
