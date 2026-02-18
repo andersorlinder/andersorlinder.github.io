@@ -53,6 +53,7 @@ header a:hover {
 
 .pageBackGround {
   height: auto;
+  margin-bottom: 400px;
   width: 100%;
   background-color: #EEEEEE;
   border: 0px solid #EEEEEE;
@@ -64,12 +65,7 @@ a.pageAnchor {
   visibility: hidden;
 }
 
-.extraHeight {
-  height: 400px;
-}
-
 .container {
-  display: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -135,7 +131,7 @@ footer {
 }
 
 .footerLink a {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 2em;
   font-weight: bold;
   text-decoration: none;
@@ -146,7 +142,7 @@ footer {
   color: #AAA;
 }
 
-@media (orientation: landscape) and (min-width: 992px) {
+@media (min-width: 992px) {
   a.pageAnchor {
     height: 250px;
   }
@@ -174,5 +170,11 @@ footer {
   .footerLink {
     display: inline;
     margin: 0 20px;
+  }
+}
+
+@media (orientation: portrait) and (min-height: 992px) {
+  .pageBackGround {
+    margin-bottom: 700px;
   }
 }
