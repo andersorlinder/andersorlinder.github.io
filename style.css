@@ -51,7 +51,7 @@ header a:hover {
   color: #EEEEEE;
 }
 
-.pageBackGround {
+.containerBackGround {
   height: auto;
   margin-bottom: 400px;
   width: 100%;
@@ -59,7 +59,7 @@ header a:hover {
   border: 0px solid #EEEEEE;
 }
 
-a.pageAnchor {
+a.containerAnchor {
   height: 140px;
   display: block;
   visibility: hidden;
@@ -143,7 +143,7 @@ footer {
 }
 
 @media (min-width: 992px) {
-  a.pageAnchor {
+  a.containerAnchor {
     height: 250px;
   }
 
@@ -174,7 +174,7 @@ footer {
 }
 
 @media (orientation: portrait) and (min-height: 992px) {
-  .pageBackGround {
+  .containerBackGround {
     margin-bottom: 700px;
   }
 }
