@@ -65,7 +65,7 @@ a.pageAnchor {
 }
 
 .extraHeight {
-  height: 800px;
+  height: 400px;
 }
 
 .container {
@@ -105,7 +105,7 @@ a.pageAnchor {
 }
 
 .textContainer ul li {
-  font-size: 1.5em;
+  font-size: 1.2em;
   line-height: 2;
 }
 
