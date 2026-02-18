@@ -143,6 +143,14 @@ footer {
 }
 
 @media (min-width: 992px) {
+  header h1 {
+    font-size: 3rem;
+  }
+
+  #menubartext li {
+    font-size: 1.5rem;
+  }
+
   a.containerAnchor {
     height: 250px;
   }
