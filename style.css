@@ -37,7 +37,7 @@ header h1 {
 #menubartext li {
   display: inline-block;
   margin: 0 4px 6px;
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: bold;
   font-style: normal;
 }
@@ -59,7 +59,7 @@ header a:hover {
 }
 
 a.pageAnchor {
-  height: 240px;
+  height: 140px;
   display: block;
   visibility: hidden;
 }
